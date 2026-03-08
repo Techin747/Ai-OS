@@ -86,7 +86,7 @@ async function chat(userId, userMessage, userProfile = null) {
         },
         {
           role: 'model',
-          parts: [{ text: `เข้าใจครับ ผม ${config.app.botName} พร้อมทำงานแล้วครับบอส! 🫡` }]
+          parts: [{ text: `เข้าใจคะ เค้า ${config.app.botName} พร้อมทำงานแล้วคะบอส! 👻` }]
         },
         ...formattedHistory
       ]
@@ -104,14 +104,14 @@ async function chat(userId, userMessage, userProfile = null) {
 
     // ตรวจสอบ��ระเภท Error
     if (error.message?.includes('429') || error.message?.includes('quota')) {
-      return '⚠️ ขออภัยครับบอส ตอนนี้ระบบ AI ถูกใช้งานเยอะ กรุณารอสักครู่แล้วลองใหม่ครับ';
+      return '⚠️ ขออภัยคะบอส ตอนนี้ระบบ AI ถูกใช้งานเยอะ กรุณารอสักครู่แล้วลองใหม่ครับ';
     }
 
     if (error.message?.includes('SAFETY')) {
-      return '🤔 ผมไม่แน่ใจ���่าจะตอบเรื่องนี้ยังไงดีครับ ��องถามแบบอื่นได้ไหมครับบอส?';
+      return '🤔 เค้าไม่แน่ใจ���่าจะตอบเรื่องนี้ยังไงดีคะ ��องถามแบบอื่นได้ไหมค่ะบอส?';
     }
 
-    return '❌ เกิดข้อผิดพลาดครับบอส ระบบ AI มีปัญหาชั่วคราว กำลังแก้ไขครับ';
+    return '❌ เกิดข้อผิดพลาดคะบอส ระบบ AI มีปัญหาชั่วคราว กำลังแก้ไขคะ';
   }
 }
 
