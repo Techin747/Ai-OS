@@ -1,0 +1,20 @@
+{
+  "name": "claw-personal-os",
+  "version": "1.0.0",
+  "description": "Claw Personal OS - Jarvis Level AI Assistant on LINE",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.6.0",
+    "@google/generative-ai": "^0.21.0",
+    "express": "^4.21.0",
+    "mongodb": "^6.10.0",
+    "dotenv": "^16.4.5"
+  }
+}
