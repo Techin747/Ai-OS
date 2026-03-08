@@ -35,7 +35,7 @@ const config = {
   // Gemini Config
   gemini: {
     apiKey: process.env.GEMINI_API_KEY,
-    model: 'gemini-2.0-flash',        // โมเดลฟรีที่เร็วและฉลาด
+    model: 'gemini-2.5-flash',        // โมเดลฟรีที่เร็วและฉลาด
     maxOutputTokens: 1024,              // จำกัดความยาวคำตอบ
     temperature: 0.8                    // ความคิดสร้างสรรค์ (0-1)
   },
